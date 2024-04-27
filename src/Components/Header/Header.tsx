@@ -1,9 +1,11 @@
 import React from 'react'
 import '../Header/Header.css'
-const Header = () => {
+import Navbar from './Navbar/Navbar'
+const Header = ({logo}:any) => {
   return (
     <header>
-        <h1>BLOG</h1>
+        <h1>{logo}</h1>
+        <Navbar/>
     </header>
   )
 }

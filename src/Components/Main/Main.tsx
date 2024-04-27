@@ -1,10 +1,18 @@
 import React from 'react'
-import Header from '../Header/Header'
+import Home from './Home/Home'
+import { Route, Routes } from 'react-router-dom'
+import Additem from './Create/Additem'
+
 
 const Main = () => {
+
   return (
     <main>
-        <Header/>
+      <Routes>
+        {/* pages */}
+        <Route  path='/' element={<Home/>}/>
+        <Route  path='/create' element={<Additem/>}/>
+      </Routes>
     </main>
   )
 }
