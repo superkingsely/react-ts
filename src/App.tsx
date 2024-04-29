@@ -2,6 +2,7 @@ import Main from './Components/Main/Main'
 import Header from './Components/Header/Header'
 import Home from './Components/Main/Home/Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Layout from './Components/Layout/Layout'
 
 // online:
 // json-server=$ npx json-server -w Data/db.json --port 8000 
@@ -14,11 +15,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 const App = () => {
   return (
     <BrowserRouter>
-    <div className="app">
-      <Header logo='Blog'/>
       <Main/>
-      
-    </div>
     </BrowserRouter>
   )
 }
